@@ -129,13 +129,13 @@
         <!--Services-->
         <scene sceneID="4Ok-kz-Moc">
             <objects>
-                <tableViewController id="kXd-Sb-M7M" sceneMemberID="viewController">
+                <tableViewController id="kXd-Sb-M7M" customClass="ServicesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="5A4-Kt-vI6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="dQK-6o-WF1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="dQK-6o-WF1" customClass="ServicesTableViewCell">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dQK-6o-WF1" id="5Qb-6p-y57">
@@ -164,7 +164,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="WEM-Cq-t6y" kind="show" id="inh-Ye-Qzd"/>
+                                    <outlet property="cellLabel" destination="6Dc-Ee-Lk2" id="TxR-Wy-4Xz"/>
+                                    <segue destination="WEM-Cq-t6y" kind="show" identifier="showDetail" id="sFL-Tl-WEC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -179,21 +180,68 @@
             </objects>
             <point key="canvasLocation" x="430.43478260869568" y="1879.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Services View Controller-->
         <scene sceneID="cuD-Ao-grh">
             <objects>
-                <viewController id="WEM-Cq-t6y" sceneMemberID="viewController">
+                <viewController id="WEM-Cq-t6y" customClass="ServicesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9F-wa-l7g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-qV-Bzv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W9r-lF-QLh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="265.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-HZ-UM6">
+                                <rect key="frame" x="20" y="378.5" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="vgi-T4-RED"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ps5-uE-QTE">
+                                <rect key="frame" x="0.0" y="469.5" width="414" height="265.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qED-vN-VJY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ld-HZ-UM6" firstAttribute="leading" secondItem="qED-vN-VJY" secondAttribute="leading" constant="20" id="0Sw-tR-5tK"/>
+                            <constraint firstItem="W9r-lF-QLh" firstAttribute="leading" secondItem="qED-vN-VJY" secondAttribute="leading" id="5jD-mQ-In2"/>
+                            <constraint firstItem="W9r-lF-QLh" firstAttribute="top" secondItem="qED-vN-VJY" secondAttribute="top" id="B7m-Dr-cQe"/>
+                            <constraint firstItem="Ps5-uE-QTE" firstAttribute="leading" secondItem="qED-vN-VJY" secondAttribute="leading" id="EG1-Ys-2ok"/>
+                            <constraint firstItem="uhd-qV-Bzv" firstAttribute="leading" secondItem="qED-vN-VJY" secondAttribute="leading" id="HKC-HU-v5b"/>
+                            <constraint firstItem="W9r-lF-QLh" firstAttribute="trailing" secondItem="qED-vN-VJY" secondAttribute="trailing" id="LtJ-EQ-zzS"/>
+                            <constraint firstItem="Ps5-uE-QTE" firstAttribute="top" secondItem="8Ld-HZ-UM6" secondAttribute="bottom" constant="21" id="ZaX-1T-cHo"/>
+                            <constraint firstItem="qED-vN-VJY" firstAttribute="bottom" secondItem="Ps5-uE-QTE" secondAttribute="bottom" constant="78" id="fED-d9-4hO"/>
+                            <constraint firstItem="uhd-qV-Bzv" firstAttribute="trailing" secondItem="qED-vN-VJY" secondAttribute="trailing" id="hhd-Tf-KmT"/>
+                            <constraint firstItem="qED-vN-VJY" firstAttribute="trailing" secondItem="8Ld-HZ-UM6" secondAttribute="trailing" constant="20" id="mup-gI-FDr"/>
+                            <constraint firstItem="Ps5-uE-QTE" firstAttribute="trailing" secondItem="qED-vN-VJY" secondAttribute="trailing" id="pzF-Hi-nPW"/>
+                            <constraint firstAttribute="bottom" secondItem="uhd-qV-Bzv" secondAttribute="bottom" id="rhc-t9-uTa"/>
+                            <constraint firstItem="8Ld-HZ-UM6" firstAttribute="top" secondItem="W9r-lF-QLh" secondAttribute="bottom" constant="25" id="uWY-43-xtj"/>
+                            <constraint firstItem="uhd-qV-Bzv" firstAttribute="top" secondItem="qED-vN-VJY" secondAttribute="top" id="usu-fr-BgF"/>
+                            <constraint firstItem="Ps5-uE-QTE" firstAttribute="height" secondItem="W9r-lF-QLh" secondAttribute="height" id="vov-l6-Txk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="htd-bK-0rM"/>
+                    <connections>
+                        <outlet property="detailDescription" destination="Ps5-uE-QTE" id="Qhf-2F-Kkp"/>
+                        <outlet property="detailImage" destination="W9r-lF-QLh" id="qyP-Dx-Z6o"/>
+                        <outlet property="detailLabel" destination="8Ld-HZ-UM6" id="zMb-xU-jk3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yP-Oe-PTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="1880"/>
+            <point key="canvasLocation" x="1221.7391304347827" y="1879.6875"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="x0t-qO-CNm">

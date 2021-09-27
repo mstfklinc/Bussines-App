@@ -18,6 +18,18 @@
 		FA69BACA2701A28B00F536BD /* Bussines_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAC92701A28B00F536BD /* Bussines_AppTests.m */; };
 		FA69BAD42701A28B00F536BD /* Bussines_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAD32701A28B00F536BD /* Bussines_AppUITests.m */; };
 		FA69BAD62701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAD52701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m */; };
+		FA69BAE52701D08000F536BD /* ServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE42701D08000F536BD /* ServicesTableViewController.m */; };
+		FA69BAE62701D08000F536BD /* ServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE42701D08000F536BD /* ServicesTableViewController.m */; };
+		FA69BAE72701D08000F536BD /* ServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE42701D08000F536BD /* ServicesTableViewController.m */; };
+		FA69BAEA2701D0B900F536BD /* ServicesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE92701D0B900F536BD /* ServicesTableViewCell.m */; };
+		FA69BAEB2701D0B900F536BD /* ServicesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE92701D0B900F536BD /* ServicesTableViewCell.m */; };
+		FA69BAEC2701D0B900F536BD /* ServicesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAE92701D0B900F536BD /* ServicesTableViewCell.m */; };
+		FA69BAEF2701D0D500F536BD /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAEE2701D0D500F536BD /* ServicesViewController.m */; };
+		FA69BAF02701D0D500F536BD /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAEE2701D0D500F536BD /* ServicesViewController.m */; };
+		FA69BAF12701D0D500F536BD /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69BAEE2701D0D500F536BD /* ServicesViewController.m */; };
+		FA69BAF32701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
+		FA69BAF42701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
+		FA69BAF52701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,13 @@
 		FA69BACF2701A28B00F536BD /* Bussines AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bussines AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA69BAD32701A28B00F536BD /* Bussines_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bussines_AppUITests.m; sourceTree = "<group>"; };
 		FA69BAD52701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bussines_AppUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FA69BAE32701D08000F536BD /* ServicesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesTableViewController.h; sourceTree = "<group>"; };
+		FA69BAE42701D08000F536BD /* ServicesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesTableViewController.m; sourceTree = "<group>"; };
+		FA69BAE82701D0B900F536BD /* ServicesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesTableViewCell.h; sourceTree = "<group>"; };
+		FA69BAE92701D0B900F536BD /* ServicesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesTableViewCell.m; sourceTree = "<group>"; };
+		FA69BAED2701D0D500F536BD /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
+		FA69BAEE2701D0D500F536BD /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		FA69BAF22701D1A900F536BD /* ServiceList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +131,7 @@
 				FA69BAAE2701A28600F536BD /* SceneDelegate.m */,
 				FA69BAB02701A28600F536BD /* ViewController.h */,
 				FA69BAB12701A28600F536BD /* ViewController.m */,
+				FA69BAE22701D05C00F536BD /* Services */,
 				FA69BAB32701A28600F536BD /* Main.storyboard */,
 				FA69BAB92701A28A00F536BD /* Assets.xcassets */,
 				FA69BABB2701A28A00F536BD /* LaunchScreen.storyboard */,
@@ -137,6 +157,20 @@
 				FA69BAD52701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m */,
 			);
 			path = "Bussines AppUITests";
+			sourceTree = "<group>";
+		};
+		FA69BAE22701D05C00F536BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA69BAE32701D08000F536BD /* ServicesTableViewController.h */,
+				FA69BAE42701D08000F536BD /* ServicesTableViewController.m */,
+				FA69BAE82701D0B900F536BD /* ServicesTableViewCell.h */,
+				FA69BAE92701D0B900F536BD /* ServicesTableViewCell.m */,
+				FA69BAED2701D0D500F536BD /* ServicesViewController.h */,
+				FA69BAEE2701D0D500F536BD /* ServicesViewController.m */,
+				FA69BAF22701D1A900F536BD /* ServiceList.plist */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA69BAF32701D1A900F536BD /* ServiceList.plist in Resources */,
 				FA69BABD2701A28A00F536BD /* LaunchScreen.storyboard in Resources */,
 				FA69BABA2701A28A00F536BD /* Assets.xcassets in Resources */,
 				FA69BAB52701A28600F536BD /* Main.storyboard in Resources */,
@@ -252,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA69BAF42701D1A900F536BD /* ServiceList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA69BAF52701D1A900F536BD /* ServiceList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69BAC02701A28A00F536BD /* main.m in Sources */,
+				FA69BAEA2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
 				FA69BAB22701A28600F536BD /* ViewController.m in Sources */,
 				FA69BAB82701A28600F536BD /* Bussines_App.xcdatamodeld in Sources */,
 				FA69BAAC2701A28600F536BD /* AppDelegate.m in Sources */,
 				FA69BAAF2701A28600F536BD /* SceneDelegate.m in Sources */,
+				FA69BAEF2701D0D500F536BD /* ServicesViewController.m in Sources */,
+				FA69BAE52701D08000F536BD /* ServicesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69BACA2701A28B00F536BD /* Bussines_AppTests.m in Sources */,
+				FA69BAE62701D08000F536BD /* ServicesTableViewController.m in Sources */,
+				FA69BAF02701D0D500F536BD /* ServicesViewController.m in Sources */,
+				FA69BAEB2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69BAD62701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m in Sources */,
+				FA69BAEC2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
 				FA69BAD42701A28B00F536BD /* Bussines_AppUITests.m in Sources */,
+				FA69BAF12701D0D500F536BD /* ServicesViewController.m in Sources */,
+				FA69BAE72701D08000F536BD /* ServicesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
