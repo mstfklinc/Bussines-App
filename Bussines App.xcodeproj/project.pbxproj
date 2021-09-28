@@ -30,6 +30,9 @@
 		FA69BAF32701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
 		FA69BAF42701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
 		FA69BAF52701D1A900F536BD /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA69BAF22701D1A900F536BD /* ServiceList.plist */; };
+		FA776C1827034B9100E6AEC9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA776C1727034B9100E6AEC9 /* AboutViewController.m */; };
+		FA776C1927034B9100E6AEC9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA776C1727034B9100E6AEC9 /* AboutViewController.m */; };
+		FA776C1A27034B9100E6AEC9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA776C1727034B9100E6AEC9 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,8 @@
 		FA69BAED2701D0D500F536BD /* ServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		FA69BAEE2701D0D500F536BD /* ServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		FA69BAF22701D1A900F536BD /* ServiceList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceList.plist; sourceTree = "<group>"; };
+		FA776C1627034B9100E6AEC9 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		FA776C1727034B9100E6AEC9 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,7 @@
 				FA69BAB02701A28600F536BD /* ViewController.h */,
 				FA69BAB12701A28600F536BD /* ViewController.m */,
 				FA69BAE22701D05C00F536BD /* Services */,
+				FA776C1527034B6E00E6AEC9 /* About */,
 				FA69BAB32701A28600F536BD /* Main.storyboard */,
 				FA69BAB92701A28A00F536BD /* Assets.xcassets */,
 				FA69BABB2701A28A00F536BD /* LaunchScreen.storyboard */,
@@ -171,6 +177,15 @@
 				FA69BAF22701D1A900F536BD /* ServiceList.plist */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FA776C1527034B6E00E6AEC9 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				FA776C1627034B9100E6AEC9 /* AboutViewController.h */,
+				FA776C1727034B9100E6AEC9 /* AboutViewController.m */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA776C1827034B9100E6AEC9 /* AboutViewController.m in Sources */,
 				FA69BAC02701A28A00F536BD /* main.m in Sources */,
 				FA69BAEA2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
 				FA69BAB22701A28600F536BD /* ViewController.m in Sources */,
@@ -322,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69BACA2701A28B00F536BD /* Bussines_AppTests.m in Sources */,
+				FA776C1927034B9100E6AEC9 /* AboutViewController.m in Sources */,
 				FA69BAE62701D08000F536BD /* ServicesTableViewController.m in Sources */,
 				FA69BAF02701D0D500F536BD /* ServicesViewController.m in Sources */,
 				FA69BAEB2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
@@ -332,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA776C1A27034B9100E6AEC9 /* AboutViewController.m in Sources */,
 				FA69BAD62701A28B00F536BD /* Bussines_AppUITestsLaunchTests.m in Sources */,
 				FA69BAEC2701D0B900F536BD /* ServicesTableViewCell.m in Sources */,
 				FA69BAD42701A28B00F536BD /* Bussines_AppUITests.m in Sources */,
